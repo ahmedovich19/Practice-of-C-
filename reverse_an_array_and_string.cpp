@@ -31,9 +31,8 @@ int main()
     int arr_num;
     cin >> arr_num;
 	int arr[arr_num];
-	int n = sizeof(arr) / sizeof(arr[0]);
 	cout << "\nType "<< arr_num<<" numbers for the array: \n";
-	for(int i = 0; i < n; i++){
+	for(int i = 0; i < arr_num; i++){
         cin>>arr[i];
         cout << endl;
     }
@@ -43,7 +42,7 @@ int main()
     cin >> stringo;
     int string_len = stringo.length();
 	// To print original array and its reversed
-	print_Array_and_reversed(arr,0, n-1);
+	print_Array_and_reversed(arr,0, arr_num-1);
     // To print original string and its reversed
     print_string_and_reversed(stringo, string_len-1);
 

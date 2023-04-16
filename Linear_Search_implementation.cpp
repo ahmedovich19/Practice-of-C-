@@ -18,11 +18,13 @@ int search(int arr[], int N, int x)
 int main(void)
 {
     int N;
-    int x = 10;
-    cout <<"Type The Array Size: ";
+    int x;
+    cout <<"Type The value you want to research: ";
+	cin>>x;
+    cout <<"\nType The Array Size: ";
 	cin>>N;
 	int arr[N];
-	cout <<"Type The Array elements: \n";
+	cout <<"\nType The Array elements: \n";
 	for (int i=0;i<N;i++){
         cin>>arr[i];
 	}
